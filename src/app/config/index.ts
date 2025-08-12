@@ -25,5 +25,4 @@ export default {
     is_live:process.env.IS_LIVE
   },
   base_url: process.env.BASE_URL,
-  client_url: process.env.CLIENT_URL,
 };
