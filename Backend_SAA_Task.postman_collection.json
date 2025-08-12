@@ -1,0 +1,1229 @@
+{
+	"info": {
+		"_postman_id": "d7c3d2d8-ad4a-4c19-8f81-49eb59d20993",
+		"name": "Backend_SAA_Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38675905"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accesstoken generated",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtcGxveWVlQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NDkyNDE2MSwiZXhwIjoxNzU1MDEwNTYxfQ.BsykCdn5-KNAuIT0iX5e9uiBd1Jq7FmA06RheehV5Vw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/auth/refresh-token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"saurav\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"company\": \"scleup\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/user/employee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create job-seeker",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"job seeker\",\r\n    \"email\": \"jobseeker@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/user/job-seeker",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"job-seeker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNTExNywiZXhwIjoxNzU1MDExNTE3fQ.iwi81JhoidUiQvMKHubLdWcFo7O84gX_yWgIZoUBsQs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/user/profile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "Employee(recruiters)",
+					"item": [
+						{
+							"name": "get employees  all job",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "react",
+											"disabled": true
+										},
+										{
+											"key": "title",
+											"value": "Frontend Developer",
+											"disabled": true
+										},
+										{
+											"key": "requirements",
+											"value": "React",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sortBy",
+											"value": "title",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "asc",
+											"disabled": true
+										},
+										{
+											"key": "jobType",
+											"value": "internship",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get employee job by Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job/689af5c542260d2e6964fca8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job",
+										"689af5c542260d2e6964fca8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updated employee job by id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"title\": \"Remote Frontend Engineer\",\r\n    \"description\": \"Work on building high-performance web applications using React, TypeScript, and TailwindCSS.\",\r\n    \"requirements\": [\r\n      \"3+ years in frontend development\",\r\n      \"Proficiency in React and TypeScript\",\r\n      \"Experience with TailwindCSS\"\r\n    ],\r\n    \"companyName\": \"WebWorks Inc.\",\r\n    \"location\": \"Mirpur-10,Dhaka,Bangladesh\",\r\n    \"salaryRange\": { \"min\": 20000, \"max\": 60000 },\r\n    \"jobType\": \"remote\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-11-11T00:00:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job/689af5c542260d2e6964fca8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job",
+										"689af5c542260d2e6964fca8"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleted employee job by id Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n   \"title\": \"Remote Frontend Engineer\",\r\n    \"description\": \"Work on building high-performance web applications using React, TypeScript, and TailwindCSS.\",\r\n    \"requirements\": [\r\n      \"3+ years in frontend development\",\r\n      \"Proficiency in React and TypeScript\",\r\n      \"Experience with TailwindCSS\"\r\n    ],\r\n    \"companyName\": \"WebWorks Inc.\",\r\n    \"location\": \"Mirpur-10,Dhaka,Bangladesh\",\r\n    \"salaryRange\": { \"min\": 20000, \"max\": 60000 },\r\n    \"jobType\": \"remote\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-11-11T00:00:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job/689b774b7d60e792c6bf0123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job",
+										"689b774b7d60e792c6bf0123"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "create all type user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"saurav\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"employee\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updeted user",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"saurav sarkar\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/689a0d276041776e4cc4294e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"689a0d276041776e4cc4294e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updeted user Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/689a0d276041776e4cc4294e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"689a0d276041776e4cc4294e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get all user",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										""
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "gmail",
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": "admin",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "admin@gmail.com",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sortBy",
+											"value": "name",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "asc",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "analytics",
+					"item": [
+						{
+							"name": "company analytics",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/analytics",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"analytics"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "job-seeker application",
+					"item": [
+						{
+							"name": "get all job-seeker",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job-seeker"
+									],
+									"query": [
+										{
+											"key": "searchTerm",
+											"value": "accepted",
+											"disabled": true
+										},
+										{
+											"key": "paymentStatus",
+											"value": "false",
+											"disabled": true
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": "2",
+											"disabled": true
+										},
+										{
+											"key": "sortBy",
+											"value": "status",
+											"disabled": true
+										},
+										{
+											"key": "sortOrder",
+											"value": "asc",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get job-seeker by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689b4d51e9c4bfc06aefe475",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job-seeker",
+										"689b4d51e9c4bfc06aefe475"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleted job-seeker by id",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689b4d51e9c4bfc06aefe475",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job-seeker",
+										"689b4d51e9c4bfc06aefe475"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updated job-seeker by id",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"accepted\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689b4d51e9c4bfc06aefe475",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"all-job-seeker",
+										"689b4d51e9c4bfc06aefe475"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Employee( recruiters)",
+			"item": [
+				{
+					"name": "create job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Contract Data Analyst\",\r\n    \"description\": \"Analyze large datasets, create visual reports, and provide insights to improve business decisions.\",\r\n    \"requirements\": [\r\n      \"Strong SQL skills\",\r\n      \"Experience with Power BI or Tableau\",\r\n      \"Statistical analysis background\"\r\n    ],\r\n    \"companyName\": \"DataSphere Analytics\",\r\n    \"location\": \"Chicago, IL\",\r\n    \"salaryRange\": { \"min\": 50000, \"max\": 80000 },\r\n    \"jobType\": \"contract\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-09-25T00:00:00Z\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/create-job",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"create-job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updated job",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Marketing Interns\"\r\n    \r\n    // \"user\": \"66b9e3e97c412b34af9f1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"689af5a142260d2e6964fca4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleted job",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"689af5a142260d2e6964fca4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get Employee By job Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"689af5a142260d2e6964fca4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Applicant jobseeker management",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU1MDA4ODM3LCJleHAiOjE3NTUwOTUyMzd9.9fDVuon79P7SKJvfTpwHz20EtX6Z5K0dPK4ZwKra0T0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"accepted\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/689af5c542260d2e6964fca8/applicants/689b4d51e9c4bfc06aefe475/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								"689af5c542260d2e6964fca8",
+								"applicants",
+								"689b4d51e9c4bfc06aefe475",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get employees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU1MDA4NjUzLCJleHAiOjE3NTUwOTUwNTN9.Q_gw-I79LVegeOMSs3zPrYv7uDSn7mj0QiaN0QGg804",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employee/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employee",
+								""
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": "react",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "Remote Frontend Engineer",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "salaryRange",
+									"disabled": true
+								},
+								{
+									"key": "sortOrder",
+									"value": "asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "job Seeker",
+			"item": [
+				{
+					"name": "apply job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODEwNDQ5OGUzNmNhMDUwMDRmMyIsImVtYWlsIjoiam9ic2Vla2VyQGdtYWlsLmNvbSIsInJvbGUiOiJqb2JTZWVrZXIiLCJpYXQiOjE3NTQ5ODYzNTQsImV4cCI6MTc1NTA3Mjc1NH0.0tLB0QBvXU2_VZL-P1DJpxYxufJ0fZhA4C2yOG8PWQU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "cv",
+									"type": "file",
+									"src": "/D:/CV/SAURAV SARKAR CV.pdf"
+								},
+								{
+									"key": "data",
+									"value": "{\n    \"employeejobId\": \"689af5c542260d2e6964fca8\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/job-seeker/apply",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"job-seeker",
+								"apply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view all jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/job-seeker/jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"job-seeker",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "searchTerm",
+									"value": "tailwindCSS",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "Marketing Interns",
+									"disabled": true
+								},
+								{
+									"key": "companyName",
+									"value": "BrightFuture Marketing",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "sortBy",
+									"value": "salaryRange",
+									"disabled": true
+								},
+								{
+									"key": "sortOrder",
+									"value": "asc",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "job seeker application",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODEwNDQ5OGUzNmNhMDUwMDRmMyIsImVtYWlsIjoiam9ic2Vla2VyQGdtYWlsLmNvbSIsInJvbGUiOiJqb2JTZWVrZXIiLCJpYXQiOjE3NTQ5ODAzMjEsImV4cCI6MTc1NTA2NjcyMX0.oJiPM9n9LqtuQuwSvUH_84c6SasZ2sT52u77WGCZwH0",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/job-seeker/applications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"job-seeker",
+								"applications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "success payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/job-seeker/payment/success/689b4d51e9c4bfc06aefe473",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"job-seeker",
+								"payment",
+								"success",
+								"689b4d51e9c4bfc06aefe473"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fail payment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/job-seeker/payment/fail/689b1feb3680284a8361366d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"job-seeker",
+								"payment",
+								"fail",
+								"689b1feb3680284a8361366d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deployment  link",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jr-backend-saa-task-submission.vercel.app/",
+					"protocol": "https",
+					"host": [
+						"jr-backend-saa-task-submission",
+						"vercel",
+						"app"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
