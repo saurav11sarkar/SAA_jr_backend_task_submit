@@ -32,8 +32,41 @@ const profile = catchAsycn(async (req, res) => {
   });
 });
 
+const getUserById = catchAsycn(async (req, res) => {
+  const result = await userService.getUserById(req.user?.id);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "Profile retrieved successfully",
+    data: result,
+  });
+});
+
+const updateUser = catchAsycn(async (req, res) => {
+  const result = await userService.updateUser(req.user?.id, req.body);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "Profile updated successfully",
+    data: result,
+  });
+});
+
+const deleteUser = catchAsycn(async (req, res) => {
+  const result = await userService.deleteUser(req.user?.id);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "Profile deleted successfully",
+    data: result,
+  });
+});
+
 export const userController = {
   createEemployee,
   createJobSeeker,
   profile,
+  getUserById,
+  updateUser,
+  deleteUser,
 };

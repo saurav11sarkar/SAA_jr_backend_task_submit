@@ -23,4 +23,20 @@ router.get(
   userController.profile
 );
 
+router.get(
+  "/",
+  auth("admin", "jobSeeker", "employee"),
+  userController.getUserById
+);
+router.put(
+  "/",
+  auth("admin", "jobSeeker", "employee"),
+  userController.updateUser
+);
+router.delete(
+  "/",
+  auth("admin", "jobSeeker", "employee"),
+  userController.deleteUser
+);
+
 export const userRouter = router;
