@@ -44,13 +44,7 @@
 					"name": "accesstoken generated",
 					"request": {
 						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtcGxveWVlQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NDkyNDE2MSwiZXhwIjoxNzU1MDEwNTYxfQ.BsykCdn5-KNAuIT0iX5e9uiBd1Jq7FmA06RheehV5Vw",
-								"type": "text"
-							}
-						],
+						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
@@ -84,7 +78,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"saurav\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"company\": \"scleup\"\r\n}",
+							"raw": "{\r\n    \"name\": \"sarkar\",\r\n    \"email\": \"sarkar@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"company\": \"Tech Corp\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -115,7 +109,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"job seeker\",\r\n    \"email\": \"jobseeker@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"raw": "{\r\n    \"name\": \"user\",\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -146,7 +140,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNTExNywiZXhwIjoxNzU1MDExNTE3fQ.iwi81JhoidUiQvMKHubLdWcFo7O84gX_yWgIZoUBsQs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxNzM2ZjE4MTcxNDgyMDRlMWI1MiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJyb2xlIjoiam9iU2Vla2VyIiwiaWF0IjoxNzU1MDYyNDg1LCJleHAiOjE3NTUxNDg4ODV9.ryOoL8xAYRrNS6XPPzWDrL6ksigljNA6rRRsXxoGdvE",
 								"type": "text"
 							}
 						],
@@ -185,7 +179,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY4OTc3LCJleHAiOjE3NTUxNTUzNzd9.dZG0apk8n6RjpBmjapJJdIGikaWdpU_LcrEkezx_3FM",
 										"type": "text"
 									}
 								],
@@ -259,7 +253,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY3OTUyLCJleHAiOjE3NTUxNTQzNTJ9.fYQVLjoMBhUwpn2byhV1q2umQA80Yx8dNgU6ow7BK6g",
 										"type": "text"
 									}
 								],
@@ -288,13 +282,13 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY3OTUyLCJleHAiOjE3NTUxNTQzNTJ9.fYQVLjoMBhUwpn2byhV1q2umQA80Yx8dNgU6ow7BK6g",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n   \"title\": \"Remote Frontend Engineer\",\r\n    \"description\": \"Work on building high-performance web applications using React, TypeScript, and TailwindCSS.\",\r\n    \"requirements\": [\r\n      \"3+ years in frontend development\",\r\n      \"Proficiency in React and TypeScript\",\r\n      \"Experience with TailwindCSS\"\r\n    ],\r\n    \"companyName\": \"WebWorks Inc.\",\r\n    \"location\": \"Mirpur-10,Dhaka,Bangladesh\",\r\n    \"salaryRange\": { \"min\": 20000, \"max\": 60000 },\r\n    \"jobType\": \"remote\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-11-11T00:00:00Z\"\r\n}",
+									"raw": "{\r\n   \"title\": \"Remote Frontend Engineers\",\r\n    \"description\": \"Work on building high-performance web applications using React, TypeScript, and TailwindCSS.\",\r\n    \"requirements\": [\r\n      \"3+ years in frontend development\",\r\n      \"Proficiency in React and TypeScript\",\r\n      \"Experience with TailwindCSS\"\r\n    ],\r\n    \"companyName\": \"WebWorks Inc.\",\r\n    \"location\": \"Mirpur-10,Dhaka,Bangladesh\",\r\n    \"salaryRange\": { \"min\": 20000, \"max\": 60000 },\r\n    \"jobType\": \"remote\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-11-11T00:00:00Z\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -320,13 +314,13 @@
 							"response": []
 						},
 						{
-							"name": "deleted employee job by id Copy",
+							"name": "deleted employee job by id",
 							"request": {
 								"method": "DELETE",
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDE1MTkzLCJleHAiOjE3NTUxMDE1OTN9.gxd6jHqMKsrtadIdVdnrUtC-j9PpHgtQrUrLRxfF5OY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY3OTUyLCJleHAiOjE3NTUxNTQzNTJ9.fYQVLjoMBhUwpn2byhV1q2umQA80Yx8dNgU6ow7BK6g",
 										"type": "text"
 									}
 								],
@@ -375,7 +369,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"saurav\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"employee\"\r\n}",
+									"raw": "{\r\n    \"name\": \"new admin\",\r\n    \"email\": \"newadmin@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"admin\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -406,13 +400,13 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY2NTM5LCJleHAiOjE3NTUxNTI5Mzl9.ajNcMhxfpD8SjMMlQZ70U3Qdl7IEeIohP0SiJ_LfruI",
 										"type": "text"
 									}
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"name\": \"saurav sarkar\",\r\n    \"email\": \"saurav@gmail.com\",\r\n    \"role\": \"admin\"\r\n}",
+									"raw": "{\r\n    \"name\": \"admin\",\r\n    \"role\": \"admin\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -420,7 +414,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:5000/api/v1/admin/689a0d276041776e4cc4294e",
+									"raw": "http://localhost:5000/api/v1/admin/689a081c4498e36ca05004f6",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -430,20 +424,60 @@
 										"api",
 										"v1",
 										"admin",
-										"689a0d276041776e4cc4294e"
+										"689a081c4498e36ca05004f6"
 									]
 								}
 							},
 							"response": []
 						},
 						{
-							"name": "updeted user Copy",
+							"name": "get user by id",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY2NTM5LCJleHAiOjE3NTUxNTI5Mzl9.ajNcMhxfpD8SjMMlQZ70U3Qdl7IEeIohP0SiJ_LfruI",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/v1/admin/689a081c4498e36ca05004f6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"689a081c4498e36ca05004f6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updeted user",
 							"request": {
 								"method": "DELETE",
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY2NTM5LCJleHAiOjE3NTUxNTI5Mzl9.ajNcMhxfpD8SjMMlQZ70U3Qdl7IEeIohP0SiJ_LfruI",
 										"type": "text"
 									}
 								],
@@ -483,7 +517,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc1NDkyNjM2MywiZXhwIjoxNzU1MDEyNzYzfQ.-yubXXAgy2YVY7L5Xn6DswSgID5aH7DIJn_cFjfgMDY",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY2NTM5LCJleHAiOjE3NTUxNTI5Mzl9.ajNcMhxfpD8SjMMlQZ70U3Qdl7IEeIohP0SiJ_LfruI",
 										"type": "text"
 									}
 								],
@@ -562,7 +596,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY4OTc3LCJleHAiOjE3NTUxNTUzNzd9.dZG0apk8n6RjpBmjapJJdIGikaWdpU_LcrEkezx_3FM",
 										"type": "text"
 									}
 								],
@@ -595,7 +629,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY4OTc3LCJleHAiOjE3NTUxNTUzNzd9.dZG0apk8n6RjpBmjapJJdIGikaWdpU_LcrEkezx_3FM",
 										"type": "text"
 									}
 								],
@@ -658,7 +692,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY3OTUyLCJleHAiOjE3NTUxNTQzNTJ9.fYQVLjoMBhUwpn2byhV1q2umQA80Yx8dNgU6ow7BK6g",
 										"type": "text"
 									}
 								],
@@ -667,7 +701,7 @@
 									"raw": ""
 								},
 								"url": {
-									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689b4d51e9c4bfc06aefe475",
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689c2b085a3995d610a5436c",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -678,7 +712,7 @@
 										"v1",
 										"admin",
 										"all-job-seeker",
-										"689b4d51e9c4bfc06aefe475"
+										"689c2b085a3995d610a5436c"
 									]
 								}
 							},
@@ -724,7 +758,7 @@
 								"header": [
 									{
 										"key": "Authorization",
-										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDEyNTczLCJleHAiOjE3NTUwOTg5NzN9.zP4ihXAXRvIK1Ym5ZFVBA9416ucfjHa3_XA6jQtND4M",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODFjNDQ5OGUzNmNhMDUwMDRmNiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzU1MDY3OTUyLCJleHAiOjE3NTUxNTQzNTJ9.fYQVLjoMBhUwpn2byhV1q2umQA80Yx8dNgU6ow7BK6g",
 										"type": "text"
 									}
 								],
@@ -738,7 +772,7 @@
 									}
 								},
 								"url": {
-									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689b4d51e9c4bfc06aefe475",
+									"raw": "http://localhost:5000/api/v1/admin/all-job-seeker/689c2b085a3995d610a5436c",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -749,7 +783,7 @@
 										"v1",
 										"admin",
 										"all-job-seeker",
-										"689b4d51e9c4bfc06aefe475"
+										"689c2b085a3995d610a5436c"
 									]
 								}
 							},
@@ -769,13 +803,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2MDY3OSwiZXhwIjoxNzU1MTQ3MDc5fQ.OwA3PCejHT1EAnaNFv-srQw2OC5g0aQTSxLvLZXmAOk",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"title\": \"Contract Data Analyst\",\r\n    \"description\": \"Analyze large datasets, create visual reports, and provide insights to improve business decisions.\",\r\n    \"requirements\": [\r\n      \"Strong SQL skills\",\r\n      \"Experience with Power BI or Tableau\",\r\n      \"Statistical analysis background\"\r\n    ],\r\n    \"companyName\": \"DataSphere Analytics\",\r\n    \"location\": \"Chicago, IL\",\r\n    \"salaryRange\": { \"min\": 50000, \"max\": 80000 },\r\n    \"jobType\": \"contract\",\r\n    \"status\": \"active\",\r\n    \"applicationDeadline\": \"2025-09-25T00:00:00Z\"\r\n   \r\n}",
+							"raw": "{\r\n  \"title\": \"Lead DevOps Engineer\",\r\n  \"description\": \"Build and scale cloud infrastructure for Fortune 500 clients\",\r\n  \"requirements\": [\"10+ years AWS/GCP\", \"Terraform\", \"Kubernetes\"],\r\n  \"companyName\": \"CloudNova Solutions\",\r\n  \"location\": \"New York, NY\",\r\n  \"salaryRange\": {\r\n    \"min\": 180000,\r\n    \"max\": 220000\r\n  },\r\n  \"jobType\": \"contract\",\r\n  \"status\": \"active\",\r\n  \"applicationDeadline\": \"2025-08-30T00:00:00Z\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -806,13 +840,13 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2MDY3OSwiZXhwIjoxNzU1MTQ3MDc5fQ.OwA3PCejHT1EAnaNFv-srQw2OC5g0aQTSxLvLZXmAOk",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Marketing Interns\"\r\n    \r\n    // \"user\": \"66b9e3e97c412b34af9f1234\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Lead DevOps Engineers\",\r\n    \"description\": \"Build and scale cloud infrastructure for Fortune 500 clients of\",\r\n    \"status\":\"inactive\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -820,7 +854,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"raw": "http://localhost:5000/api/v1/employee/689c1cddb3414556647ec494",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -830,7 +864,7 @@
 								"api",
 								"v1",
 								"employee",
-								"689af5a142260d2e6964fca4"
+								"689c1cddb3414556647ec494"
 							]
 						}
 					},
@@ -843,7 +877,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2MDY3OSwiZXhwIjoxNzU1MTQ3MDc5fQ.OwA3PCejHT1EAnaNFv-srQw2OC5g0aQTSxLvLZXmAOk",
 								"type": "text"
 							}
 						],
@@ -857,7 +891,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"raw": "http://localhost:5000/api/v1/employee/689c1ba2b3414556647ec47c",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -867,7 +901,7 @@
 								"api",
 								"v1",
 								"employee",
-								"689af5a142260d2e6964fca4"
+								"689c1ba2b3414556647ec47c"
 							]
 						}
 					},
@@ -883,7 +917,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU0OTg1ODQwLCJleHAiOjE3NTUwNzIyNDB9.AMXfXRSTfosyOfer9Q3cCW723CrmhR1_lC3i_-ZxBBE",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2MDY3OSwiZXhwIjoxNzU1MTQ3MDc5fQ.OwA3PCejHT1EAnaNFv-srQw2OC5g0aQTSxLvLZXmAOk",
 								"type": "text"
 							}
 						],
@@ -897,7 +931,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/employee/689af5a142260d2e6964fca4",
+							"raw": "http://localhost:5000/api/v1/employee/689c1cddb3414556647ec494",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -907,7 +941,7 @@
 								"api",
 								"v1",
 								"employee",
-								"689af5a142260d2e6964fca4"
+								"689c1cddb3414556647ec494"
 							]
 						}
 					},
@@ -920,7 +954,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU1MDA4ODM3LCJleHAiOjE3NTUwOTUyMzd9.9fDVuon79P7SKJvfTpwHz20EtX6Z5K0dPK4ZwKra0T0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2NjMxNiwiZXhwIjoxNzU1MTUyNzE2fQ.0c3jDrW8OtfU5aw8J5ZbV53TkKPM25itGQ4M6lk4uyQ",
 								"type": "text"
 							}
 						],
@@ -934,7 +968,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/v1/employee/689af5c542260d2e6964fca8/applicants/689b4d51e9c4bfc06aefe475/",
+							"raw": "http://localhost:5000/api/v1/employee/689c1cddb3414556647ec494/applicants/689c2b085a3995d610a5436c/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -944,9 +978,9 @@
 								"api",
 								"v1",
 								"employee",
-								"689af5c542260d2e6964fca8",
+								"689c1cddb3414556647ec494",
 								"applicants",
-								"689b4d51e9c4bfc06aefe475",
+								"689c2b085a3995d610a5436c",
 								""
 							]
 						}
@@ -954,7 +988,7 @@
 					"response": []
 				},
 				{
-					"name": "get employees",
+					"name": "get employees by id all job",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -963,7 +997,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwNDAyNjkxNWQ1YjgzMzY2ZDE4MiIsImVtYWlsIjoiZW1wbG95ZWVAZ21haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNzU1MDA4NjUzLCJleHAiOjE3NTUwOTUwNTN9.Q_gw-I79LVegeOMSs3zPrYv7uDSn7mj0QiaN0QGg804",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxOGM2YzJiZjEzOTliOGI3Yjg3YyIsImVtYWlsIjoic2Fya2FyQGdtYWlsLmNvbSIsInJvbGUiOiJlbXBsb3llZSIsImlhdCI6MTc1NTA2MDY3OSwiZXhwIjoxNzU1MTQ3MDc5fQ.OwA3PCejHT1EAnaNFv-srQw2OC5g0aQTSxLvLZXmAOk",
 								"type": "text"
 							}
 						],
@@ -987,7 +1021,7 @@
 							"query": [
 								{
 									"key": "searchTerm",
-									"value": "react",
+									"value": "DevOps",
 									"disabled": true
 								},
 								{
@@ -1032,7 +1066,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODEwNDQ5OGUzNmNhMDUwMDRmMyIsImVtYWlsIjoiam9ic2Vla2VyQGdtYWlsLmNvbSIsInJvbGUiOiJqb2JTZWVrZXIiLCJpYXQiOjE3NTQ5ODYzNTQsImV4cCI6MTc1NTA3Mjc1NH0.0tLB0QBvXU2_VZL-P1DJpxYxufJ0fZhA4C2yOG8PWQU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxNzM2ZjE4MTcxNDgyMDRlMWI1MiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJyb2xlIjoiam9iU2Vla2VyIiwiaWF0IjoxNzU1MDYyNDg1LCJleHAiOjE3NTUxNDg4ODV9.ryOoL8xAYRrNS6XPPzWDrL6ksigljNA6rRRsXxoGdvE",
 								"type": "text"
 							}
 						],
@@ -1042,11 +1076,11 @@
 								{
 									"key": "cv",
 									"type": "file",
-									"src": "/D:/CV/SAURAV SARKAR CV.pdf"
+									"src": "/D:/CV/SAURAV SARKAR CV.docx"
 								},
 								{
 									"key": "data",
-									"value": "{\n    \"employeejobId\": \"689af5c542260d2e6964fca8\"\n}",
+									"value": "{\n    \"employeejobId\": \"689c1cddb3414556647ec494\"\n}",
 									"type": "text"
 								}
 							]
@@ -1134,7 +1168,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWEwODEwNDQ5OGUzNmNhMDUwMDRmMyIsImVtYWlsIjoiam9ic2Vla2VyQGdtYWlsLmNvbSIsInJvbGUiOiJqb2JTZWVrZXIiLCJpYXQiOjE3NTQ5ODAzMjEsImV4cCI6MTc1NTA2NjcyMX0.oJiPM9n9LqtuQuwSvUH_84c6SasZ2sT52u77WGCZwH0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4OWMxNzM2ZjE4MTcxNDgyMDRlMWI1MiIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJyb2xlIjoiam9iU2Vla2VyIiwiaWF0IjoxNzU1MDYyNDg1LCJleHAiOjE3NTUxNDg4ODV9.ryOoL8xAYRrNS6XPPzWDrL6ksigljNA6rRRsXxoGdvE",
 								"type": "text"
 							}
 						],
@@ -1161,7 +1195,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/v1/job-seeker/payment/success/689b4d51e9c4bfc06aefe473",
+							"raw": "http://localhost:5000/api/v1/job-seeker/payment/success/689c2b085a3995d610a5436a",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1173,7 +1207,7 @@
 								"job-seeker",
 								"payment",
 								"success",
-								"689b4d51e9c4bfc06aefe473"
+								"689c2b085a3995d610a5436a"
 							]
 						}
 					},
