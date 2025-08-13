@@ -8,7 +8,11 @@ import JobSeeker from "../jobSeeker/jobSeeker.model";
 import { IUser } from "../user/user.interface";
 import User from "../user/user.model";
 import { Invoice } from "../invoice/invoice.model";
+import config from "../../config";
+import bcrypt from "bcryptjs";
 
+
+// user 
 const adminAllTypeCreateUser = async (payload: Partial<IUser>) => {
   const result = await User.create(payload);
   if (!result) throw new AppError(400, "user is not created");
@@ -52,6 +56,13 @@ const getAllUsers = async (params: any, option: Partial<IOption>) => {
 };
 
 const updatedUser = async (id: string, payload: Partial<IUser>) => {
+  // If password is being updated, hash it
+  if (payload.password) {
+    payload.password = await bcrypt.hash(
+      payload.password,
+      Number(config.round)
+    );
+  }
   const result = await User.findByIdAndUpdate(id, payload, { new: true });
   if (!result) throw new AppError(400, "user is not created");
   return result;
