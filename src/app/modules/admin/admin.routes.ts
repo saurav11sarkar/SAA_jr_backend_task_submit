@@ -5,12 +5,13 @@ import validationRequest from "../../middlewares/validationRequest";
 import { employeeValidation } from "../employee/employee.velidation";
 const router = express.Router();
 
+// user
 router.post("/", auth("admin"), adminControllers.adminAllTypeCreateUser);
 router.get("/", auth("admin"), adminControllers.getAllUsers);
-router.put("/:id", auth("admin"), adminControllers.updatedUser);
-router.delete("/:id", auth("admin"), adminControllers.deletedUser);
+
 // Employee(recruiters)
 router.get("/all-job", auth("admin"), adminControllers.getAllEmployeeJob);
+
 router.get(
   "/all-job/:id",
   auth("admin"),
@@ -29,6 +30,7 @@ router.delete(
   auth("admin"),
   adminControllers.deletedEmployeejob
 );
+
 // Job seeker
 router.get("/all-job-seeker", auth("admin"), adminControllers.getAllJobSeeker);
 router.get(
@@ -49,5 +51,10 @@ router.delete(
 
 // Analytics route
 router.get("/analytics", auth("admin"), adminControllers.getAnalytics);
+
+// user router
+router.put("/:id", auth("admin"), adminControllers.updatedUser);
+router.delete("/:id", auth("admin"), adminControllers.deletedUser);
+router.get("/:id", auth("admin"), adminControllers.getSingleUser);
 
 export const adminRouter = router;

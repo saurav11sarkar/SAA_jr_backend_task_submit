@@ -90,17 +90,18 @@ const getEmployeeById = catchAsycn(async (req: Request, res: Response) => {
   });
 });
 
+
 const updateApplicantStatus = catchAsycn(async (req: Request, res: Response) => {
-  const { jobId, applicantId } = req.params;
+  const { employeeJobId, jobseekerapplicantId } = req.params;
   const { status } = req.body;
-  
+
   const result = await employeeServices.updateApplicantStatus(
-    req.user?.id,
-    jobId,
-    applicantId,
+    req.user?.id, 
+    employeeJobId,
+    jobseekerapplicantId,
     status
   );
-  
+
   sendResponse(res, {
     statusCode: 200,
     success: true,

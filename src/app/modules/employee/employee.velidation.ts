@@ -133,7 +133,7 @@ const employeeValidationSchemaUpdated = z.object({
     .default("full-time"),
 
   status: z
-    .enum(["active", "inactive", "draft"], "Status is required")
+    .enum(["active", "inactive"], "Status is required")
     .optional()
     .default("active"),
 
@@ -147,8 +147,6 @@ const employeeValidationSchemaUpdated = z.object({
   user: objectId().optional(),
   applicants: z.array(objectId()).optional(),
 });
-
-// export type EmployeeInput = z.infer<typeof employeeValidationSchema>;
 
 export const employeeValidation = {
   employeeValidationSchema,

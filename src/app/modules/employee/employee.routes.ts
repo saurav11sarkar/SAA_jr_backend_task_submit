@@ -42,7 +42,7 @@ router.get(
 
 // Applicant management routes
 router.patch(
-  "/:jobId/applicants/:applicantId",
+  "/:employeeJobId/applicants/:jobseekerapplicantId",
   auth("employee"),
   validationRequest(z.object({
     status: z.enum(["accepted", "rejected"])

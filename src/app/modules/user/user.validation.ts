@@ -33,7 +33,6 @@ const jobSeekerSchema = z.object({
     })
     .optional(),
   company: z.string().trim().optional(),
-  profilePicture: z.string().optional(),
 });
 
 export const userValidation = {

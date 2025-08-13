@@ -63,6 +63,12 @@ const deletedUser = async (id: string) => {
   return result;
 };
 
+const getSingleUser = async (id: string) => {
+  const result = await User.findById(id).select("-password");
+  if (!result) throw new AppError(400, "user is not created");
+  return result;
+};
+
 // Employee(recruiters)
 const getAllEmployeeJob = async (params: any, options: IOption) => {
   const { page, limit, skip, sortBy, sortOrder } = pagination(options); // Fixed typo
@@ -377,6 +383,7 @@ export const adminServices = {
   getAllUsers,
   updatedUser,
   deletedUser,
+  getSingleUser,
   getAllEmployeeJob,
   getSingleEmployeeJob,
   updatedEmployeeJob,

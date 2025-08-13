@@ -19,6 +19,7 @@ const userSchema = new mongoose.Schema<IUser>(
     password: {
       type: String,
       required: [true, "Password is required"],
+      minlength: [6, "Password must be at least 6 characters long"],
     },
     role: {
       type: String,
@@ -28,9 +29,12 @@ const userSchema = new mongoose.Schema<IUser>(
     company: {
       type: String,
       trim: true,
-    },
-    profilePicture: {
-      type: String,
+      required: [
+        function () {
+          return this.role === "employee";
+        },
+        "Company is required for employees",
+      ],
     },
   },
   { timestamps: true }

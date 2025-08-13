@@ -4,5 +4,4 @@ export interface IUser {
   password: string;
   role: "admin" | "employee" | "jobSeeker";
   company?: string;
-  profilePicture?: string;
 }

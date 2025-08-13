@@ -11,10 +11,6 @@ router.post(
   authController.loginUser
 );
 
-router.post(
-  "/refresh-token",
-  auth("admin", "employee", "jobSeeker"),
-  authController.refreshToken
-);
+router.post("/refresh-token", authController.refreshToken);
 
 export const authRouter = router;

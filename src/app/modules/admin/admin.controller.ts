@@ -56,8 +56,20 @@ const deletedUser = catchAsycn(async (req, res) => {
   });
 });
 
+const getSingleUser = catchAsycn(async (req, res) => {
+  const { id } = req.params;
+  const result = await adminServices.getSingleUser(id);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "User fetched successfully",
+    data: result,
+  });
+});
+
 // Employee(recruiters)
 const getAllEmployeeJob = catchAsycn(async (req, res) => {
+  console.log("first")
   const filters = pick(req.query, [
     "searchTerm",
     "title",
@@ -179,6 +191,7 @@ export const adminControllers = {
   getAllUsers,
   updatedUser,
   deletedUser,
+  getSingleUser,
   getAllEmployeeJob,
   getAnalytics,
   getSingleEmployeeJob,

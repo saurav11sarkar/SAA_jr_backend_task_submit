@@ -142,30 +142,36 @@ const getEmployeeById = async (userid: string, id: string) => {
   return result;
 };
 
+
 const updateApplicantStatus = async (
   userId: string,
-  jobId: string,
-  applicantId: string,
+  employeeJobId: string,
+  jobseekerapplicantId: string,
   status: "accepted" | "rejected"
 ) => {
-  // Verify the job belongs to the user
-  const job = await Employee.findOne({ _id: jobId, user: userId });
+  // Verify the job belongs to the requesting user
+  const job = await Employee.findOne({
+    _id: employeeJobId,
+    user: userId
+  });
+  
   if (!job) {
-    throw new AppError(404, "Job not found or not authorized");
+    throw new AppError(403, "You are not authorized to update this job's applicants");
   }
 
-  // Verify the applicant exists for this job
-  const applicant = await JobSeeker.findOne({
-    _id: applicantId,
-    employeejobId: jobId,
-  });
+  // Update the applicant status
+  const applicant = await JobSeeker.findOneAndUpdate(
+    {
+      _id: jobseekerapplicantId,
+      employeejobId: employeeJobId
+    },
+    { status },
+    { new: true }
+  );
+
   if (!applicant) {
     throw new AppError(404, "Applicant not found for this job");
   }
-
-  // Update status
-  applicant.status = status;
-  await applicant.save();
 
   return applicant;
 };
