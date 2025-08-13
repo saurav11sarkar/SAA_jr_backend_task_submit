@@ -36,7 +36,8 @@ A comprehensive job portal backend application built with Node.js, Express, Type
 
 ## 🗄️ Database Schema
 
-The application uses a well-structured MongoDB database with four main collections. For detailed database schema and relationships, see the [Entity Relationship Diagram (ERD)](./ERD.md).
+The application uses a well-structured MongoDB database with four main collections. For detailed database schema and relationships, see the [Entity Relationship Diagram (ERD)](./ERD-Visual.md).
+![Entity Relationship Diagram (ERD)](./Jr._Backend_Developer_Task_ERD.png)
 
 ### Main Entities:
 
